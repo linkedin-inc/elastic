@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"gopkg.in/olivere/elastic.v5/uritemplates"
+	"github.com/linkedin-inc/elastic.v5/uritemplates"
 )
 
 // IndicesGetSettingsService allows to retrieve settings of one

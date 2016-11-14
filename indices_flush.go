@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"gopkg.in/olivere/elastic.v5/uritemplates"
+	"github.com/linkedin-inc/elastic.v5/uritemplates"
 )
 
 // Flush allows to flush one or more indices. The flush process of an index

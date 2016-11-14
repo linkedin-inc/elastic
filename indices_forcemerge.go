@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"gopkg.in/olivere/elastic.v5/uritemplates"
+	"github.com/linkedin-inc/elastic.v5/uritemplates"
 )
 
 // IndicesForcemergeService allows to force merging of one or more indices.

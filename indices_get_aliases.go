@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	"gopkg.in/olivere/elastic.v5/uritemplates"
+	"github.com/linkedin-inc/elastic.v5/uritemplates"
 )
 
 // AliasesService returns the aliases associated with one or more indices.

@@ -14,7 +14,7 @@ import (
 
 	"golang.org/x/net/context"
 
-	elastic "gopkg.in/olivere/elastic.v5"
+	elastic "github.com/linkedin-inc/elastic.v5"
 )
 
 type Tweet struct {
