@@ -10,9 +10,8 @@ import (
 	"net/url"
 	"strings"
 
-	"golang.org/x/net/context"
-
 	"github.com/linkedin-inc/elastic.v5/uritemplates"
+	"golang.org/x/net/context"
 )
 
 // SuggestService returns suggestions for text.
@@ -151,9 +150,9 @@ type Suggestion struct {
 }
 
 type suggestionOption struct {
-	Text         string      `json:"text"`
-	Score        float64     `json:"score"`
-	Freq         int         `json:"freq"`
-	CollateMatch bool        `json:"collate_match"`
-	Source       interface{} `json:"_source"`
+	Text         string                 `json:"text"`
+	Score        float64                `json:"score"`
+	Freq         int                    `json:"freq"`
+	CollateMatch bool                   `json:"collate_match"`
+	Source       map[string]interface{} `json:"_source"`
 }

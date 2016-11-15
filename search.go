@@ -11,9 +11,8 @@ import (
 	"reflect"
 	"strings"
 
-	"golang.org/x/net/context"
-
 	"github.com/linkedin-inc/elastic.v5/uritemplates"
+	"golang.org/x/net/context"
 )
 
 // Search for documents in Elasticsearch.
@@ -470,12 +469,13 @@ type SearchSuggestion struct {
 // SearchSuggestionOption is an option of a SearchSuggestion.
 // See http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/search-suggesters.html.
 type SearchSuggestionOption struct {
-	Text         string      `json:"text"`
-	Highlighted  string      `json:"highlighted"`
-	Score        float64     `json:"score"`
-	CollateMatch bool        `json:"collate_match"`
-	Freq         int         `json:"freq"` // deprecated in 2.x
-	Payload      interface{} `json:"payload"`
+	Text         string                 `json:"text"`
+	Highlighted  string                 `json:"highlighted"`
+	Score        float64                `json:"score"`
+	CollateMatch bool                   `json:"collate_match"`
+	Freq         int                    `json:"freq"` // deprecated in 2.x
+	Payload      interface{}            `json:"payload"`
+	Source       map[string]interface{} `json:"_source"`
 }
 
 // Aggregations (see search_aggs.go)
